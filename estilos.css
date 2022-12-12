@@ -66,8 +66,6 @@ a.volver, a.volver:hover, a.voler:focus, a.volver:active {
     background-color: white;
     font-size: 20px;
     font-weight: normal;
-    position: relative;
-    display: block;
 }
 
 div {
