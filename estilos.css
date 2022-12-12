@@ -1,0 +1,104 @@
+body {
+    margin-right: 15%;
+    margin-left: 5%;
+    counter-reset: titulos;
+}
+
+a {
+    color: greenyellow;
+    background-color: white;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    background-color: darkorange;
+}
+
+a:visited:hover {
+    background-color: crimson;
+}
+a:focus {
+    border: 1px dashed pink;
+}
+
+a:active {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+
+nav {
+    border: 1px dashed blue;
+    width: 15%;
+    display: inline-block;
+    margin-right: 1%    ;
+}
+
+.primera p {
+    display: inline;
+    position: absolute;
+}
+
+.primera p::first-letter {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+p.intro::first-line {
+    font-style: italic;
+}
+
+h2::before {
+    counter-increment: titulos;
+    content: counter(titulos) " - ";
+}
+
+a.volver::after {
+    content: "Volver Arriba";
+}
+
+a.volver, a.volver:hover, a.voler:focus, a.volver:active {
+    color: yellow;
+    text-decoration-color: yellow;
+    background-color: white;
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    display: block;
+}
+
+div {
+    margin-bottom: 5%;
+}
+
+
+#google p::before {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/260px-Googleplex_HQ_%28cropped%29.jpg);
+}
+
+#amazon p::before {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Seattle_Spheres_on_May_10%2C_2018.jpg/245px-Seattle_Spheres_on_May_10%2C_2018.jpg);
+}
+
+#facebook p::before {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Screen_of_Facebook_%282%29.PNG/245px-Screen_of_Facebook_%282%29.PNG);
+}
+
+#apple p::before {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/120px-Apple_logo_black.svg.png);
+}
+
+#microsoft p::before {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Building92microsoft.jpg/245px-Building92microsoft.jpg);
+}
+
+#google p::before, #amazon p::before, #facebook p::before, #apple p::before, #microsoft p::before {
+    float: left;
+    margin-right: 1%;
+}
+
+
+
