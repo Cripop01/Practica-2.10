@@ -51,6 +51,10 @@ p.intro::first-line {
     font-style: italic;
 }
 
+p.intro, .primera p {
+    width: 50%;
+}
+
 h2::before {
     counter-increment: titulos;
     content: counter(titulos) " - ";
@@ -69,7 +73,15 @@ a.volver, a.volver:hover, a.voler:focus, a.volver:active {
 }
 
 div {
-    margin-bottom: 5%;
+    margin-bottom: 6%;
+}
+
+div.primera {
+    margin-bottom: 0;
+}
+
+#amazon {
+    margin-bottom: 8%;
 }
 
 
